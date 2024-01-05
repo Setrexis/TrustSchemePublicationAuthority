@@ -11,7 +11,7 @@ import org.glassfish.jersey.test.JerseyTest;
 import org.glassfish.jersey.test.TestProperties;
 import org.junit.Ignore;
 import org.junit.Test;
-import sun.misc.IOUtils;
+//import sun.misc.IOUtils;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Application;

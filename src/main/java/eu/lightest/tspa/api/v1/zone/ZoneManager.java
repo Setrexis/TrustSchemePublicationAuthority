@@ -17,7 +17,7 @@ public class ZoneManager implements IZoneManager {
     private static final String TRUST_LIST = "trust-list";
     private static final String SCHEMES = "schemes";
     private static final String SEP = "/";
-    private static final String HTTPS = "https://";
+    private static final String HTTPS = "http://";
 
     private static final String CONFIG_PROPERTY_NAMESERVER = "nameserver.address";
     private static final String CONFIG_PROPERTY_BEARER_TOKEN = "nameserver.token";
@@ -135,11 +135,11 @@ public class ZoneManager implements IZoneManager {
     }
 
     private String buildTrustListEndpointBySchemeName(String schemeName) {
-        return NAMES + SEP + schemeName + SEP + TRUST_LIST + SEP;
+        return NAMES + SEP + schemeName + SEP + TRUST_LIST;
     }
 
     private String buildSchemeEndpointByServiceName(String serviceName) {
-        return NAMES + SEP + serviceName + SEP + SCHEMES + SEP;
+        return NAMES + SEP + serviceName + SEP + SCHEMES;
     }
 
     private String buildFullPath(String endpoint) {
